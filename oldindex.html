@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Bacon Boss</title>
+  <link rel="icon" href="img/baconlogo.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body style="background-color:#1F487E;">
+<div class="header" id="header">
+  <div class="header-left">
+    <img src="img/logo.png" style="width:50%;height:50%" >
+  </div>
+  <div class="header-right">
+    <a href="#info">Info</a>
+    <a href="#order">Order Now</a>
+    <a href="#location">Find Us</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+</div>
+<div class="mid">
+  <h1 id="info">Info</h1>
+  <div class="mid-left">
+    <img src="img/burger.jpg" style="width:80%;height:80%">
+  </div>
+  <div class="mid-right">
+    <p>We are a construction company based in Portarlington Co.Laois.</p>
+    <p>We can take on any home improvement job, bir or small.</p>
+    <p>We cover the entire Leinster area and take no shortcuts with our work.</p>
+    <p>We only use the highest quality materials so we can give you the best service.</p>
+    <p>Get in contact with us below and see what we can do for you!.</p>
+    <img src="img/grill.jpg" style="width:80%;height:80%">
+  </div>
+  <div class="mid-left">
+    <p>Here at Bacon Boss we value quality meat. From fridge to table we do everything we can to guarantee a delicious meal for you.</p>
+    <p>From our range of burgers to our salads, we only use the finest ingredients and the best cuts of meat possible.</p>
+    <p>We use ethically sourced, Irish meat whenever possible but do make use of fairtrade imported meat as well.</p>
+    <p>Come try our new and improved secret sauce, it goes perfectly on any sandwich or burger!</p>
+    <p>We guarantee a family friendly dining experience suited for everyone (except vegetarians).</p>
+    <p>Come visit us on a special occasion like a Birthday and we will be sure to entertain!</p>
+    <p>We offer special celebration packages that feed you and your group generously!</p>
+    <p>We can also cater to any religious needs such as supllying Halal and Kosher meats!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis sem ac ligula hendrerit hendrerit nec non nunc.</p>
+    <p>Donec eleifend efficitur dolor sit amet tempor. Sed suscipit metus quis augue blandit, at dictum arcu elementum.</p>
+    <p>Nam auctor lobortis elit nec varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
+    <p>Donec tristique, ante sit amet congue molestie, urna nunc vestibulum odio, sed ullamcorper felis magna sit amet est.</p>
+    <p>Proin eu lectus iaculis, luctus dui et, cursus magna. Vivamus ultrices rutrum lorem sed aliquam. Suspendisse accumsan finibus tellus nec faucibus. </p>
+    <p>Sed elementum neque at mi feugiat molestie. Fusce lectus sem, sagittis sit amet velit et, maximus vulputate nisl. Morbi vitae ullamcorper felis.</p>
+  </div>
+</div>
+<br/>
+<div class="mid">
+  <h1 id="order">Order Now</h1>
+  <form action="order.php" method="POST">
+    <table style="width:100%">
+      <tr>
+        <b>
+          <td>Food</td>
+          <td>Price</td>
+          <td>Quantity</td>
+        </b>
+      </tr>
+      <tr>
+        <td>Bacon Big Boy</td>
+        <td>&euro;5</td>
+        <td><input type="text" name="quantity1" value="0"><span class="error"><?php echo $quant1Err;?></span></td>
+      </tr>
+      <tr>
+        <td>Bacon Fries</td>
+        <td>&euro;2</td>
+        <td><input type="text" name="quantity2" value="0"><span class="error"><?php echo $quant2Err;?></span></td>
+      </tr>
+      <tr>
+        <td>Bacon Little Boy</td>
+        <td>&euro;4</td>
+        <td><input type="text" name="quantity3" value="0"><span class="error"><?php echo $quant3Err;?></span></td>
+      </tr>
+      <tr>
+        <td>Bacon Cheesy Boy</td>
+        <td>&euro;6</td>
+        <td><input type="text" name="quantity4" value="0"><span class="error"><?php echo $quant4Err;?></span></td>
+      </tr>
+      <tr>
+        <td>Bacon Meat Platter</td>
+        <td>&euro;7</td>
+        <td><input type="text" name="quantity5" value="0"><span class="error"><?php echo $quant5Err;?></span></td>
+      </tr>
+      <tr>
+        <td>Bacon Shake</td>
+        <td>&euro;3</td>
+        <td><input type="text" name="quantity6" value="0"><span class="error"><?php echo $quant6Err;?></span></td>
+      </tr>
+      <tr>
+        <td>Bacon Crunch Wrap</td>
+        <td>&euro;4</td>
+        <td><input type="text" name="quantity7" value="0"><span class="error"><?php echo $quant7Err;?></span></td>
+      </tr>
+      <tr>
+        <td>Bacon</td>
+        <td>&euro;1</td>
+        <td><input type="text" name="quantity8" value="0"><span class="error"><?php echo $quant8Err;?></span></td>
+      </tr>
+      <tr>
+        <td>Signature Bacon Sauce</td>
+        <td>&euro;2</td>
+        <td><input type="text" name="quantity9" value="0"><span class="error"><?php echo $quant9Err;?></span></td>
+      </tr>
+      <tr>
+        <td>Soft Drink</td>
+        <td>&euro;2</td>
+        <td><input type="text" name="quantity10" value="0"><span class="error"><?php echo $quant10Err;?></span></td>
+      </tr>
+    </table>
+    Table Number:<input type="text" name="TableNumber" value=""><span class="error"><?php echo $TableNumberErr;?></span>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</div>
+<br/>
+<div class="mid">
+  <h1 id="location">Find Us</h1>
+  <div style="width: 100%">
+    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ucd%20school%20of%20computer%20science%20dublin+(Bacon%20Boss%20Dublin)&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+    </iframe><a href="https://www.maps.ie/draw-radius-circle-map/">Google radius map</a>
+  </div>
+</div>
+<br/>
+<div class="mid">
+  <h1 id="contact">Contact Us</h1>
+  <div class="mid-left">
+    <p>Call us here: <a href="tel:+353831874744">+353831874744</a></p>
+    <p>Email us here: <a href="mailto:liampb@outlook.com">liampb@outlook.com</a></p>
+    <p>Find us on Facebook: <a href="https://www.facebook.com/LADbible">Bacon Boss Belfield</a></p>
+    <p>Leave a review here: <a href="https://www.yelp.ie/biz/cosmetic-bathrooms-dublin">Bacon Boss Belfield</a></p>
+    <p>Or simply call into us and one of our staff will be happy to help you!</p>
+  </div>
+  <div class="mid-right">
+    <p>Our mailing address is:</p>
+    <p>School of Computer Science</p>
+    <p>UCD Belfield</p>
+    <p>Dublin 4</p>
+    <p>D04 R7R0</p>
+  </div>
+</div>
+</body>
+<script src="js/main.js"></script>
+</html>
